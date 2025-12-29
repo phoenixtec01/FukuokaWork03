@@ -34,6 +34,13 @@ public class CommandParse {
 				}
 			}
 		}
-		System.out.println(argsList);
+	}
+	
+	public CommandOption getOption() {
+		return option;
+	}
+	
+	public List<Object> getArgs() {
+		return argsList;
 	}
 }
