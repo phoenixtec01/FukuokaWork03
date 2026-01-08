@@ -15,7 +15,7 @@ public class CommandParse {
 			if (arg.startsWith("-")) {
 				option = optionMap.get(arg);
 				if (option == null) {
-					throw new AllException(AllException.ErrorCode.PARAMETER_ERROR);
+					throw new AllException(AllException.ErrorCode.OPTION_ERROR);
 				}
 
 			} else {

@@ -3,6 +3,7 @@
 public class AllException extends Exception {
 	public enum ErrorCode {
 		PARAMETER_ERROR,
+		OPTION_ERROR,
 		EXPECTEDNUM_ALREADY_ERROR,
 		EXPECTEDNUM_NOT_FOUND_ERROR,
 		ALLOWABLENUM_ERROR,
@@ -31,6 +32,8 @@ public class AllException extends Exception {
 		switch (errorCode) {
 		case PARAMETER_ERROR:
 			return "パラメータが不足しています。";
+		case OPTION_ERROR:
+			return "オプションのエラーです。";
 		case EXPECTEDNUM_ALREADY_ERROR:
 			return "予定番号が登録されています。";
 		case EXPECTEDNUM_NOT_FOUND_ERROR:
