@@ -17,6 +17,7 @@ public class Main {
 			for (Object arg : comParse.getArgs()) {
 				if (arg.equals("入荷予定")) {
 					//入荷予定の処理を呼び出す
+					System.out.println("入荷予定です");
 					return;
 				} else if (arg.equals("出荷予定")) {
 					//出荷予定の処理を呼び出す
