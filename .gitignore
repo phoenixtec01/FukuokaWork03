@@ -4,6 +4,7 @@
 .settings/
 
 #Java
+*.class
 bin/
 target/
 
@@ -12,3 +13,4 @@ target/
 
 #OS
 .DS_Store
+Thumbs.db
