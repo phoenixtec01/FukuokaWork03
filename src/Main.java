@@ -13,11 +13,15 @@ public class Main {
 			CommandParse comParse = new CommandParse(args, optionMap);
 			CommandOption comOp = comParse.getOption();
 			comOp.printMessage();
+			
+			DateCheck dateCheck = new DateCheck();
+			dateCheck.dateCheck("2026-01-01"); //テスト用
+			dateCheck.dateConversion("yyyyMMddHHmmssSSS"); //テスト用
+			System.out.println(dateCheck.dateConversion("yyyyMMddHHmmssSSS")); //テスト用
 
 			for (Object arg : comParse.getArgs()) {
 				if (arg.equals("入荷予定")) {
 					//入荷予定の処理を呼び出す
-					System.out.println("入荷予定です");
 					return;
 				} else if (arg.equals("出荷予定")) {
 					//出荷予定の処理を呼び出す
